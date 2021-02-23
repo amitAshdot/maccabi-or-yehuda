@@ -58,7 +58,7 @@
 .main-text {
   font-family: "adoveFnt22-bold";
   position: relative;
-  padding: 5rem 0;
+  padding: 0rem 0;
 }
 .main-image {
   font-family: "adoveFnt22-bold";
@@ -425,7 +425,7 @@
 .form {
   display: flex;
   flex-direction: column;
-width: 63rem;
+  width: 63rem;
   margin: auto;
   margin-top: 6rem;
   @include respond(phone) {
