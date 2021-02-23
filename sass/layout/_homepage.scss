@@ -7,7 +7,7 @@
   margin: 0 1rem;
 
   &-light {
-    margin: 0 1rem;
+    margin: 0 1rem 0 0;
 
     @include backgroundColor($color-primary-light);
   }
@@ -58,7 +58,11 @@
 .main-text {
   font-family: "adoveFnt22-bold";
   position: relative;
-  padding: 0rem 0;
+  padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }
 .main-image {
   font-family: "adoveFnt22-bold";
@@ -91,7 +95,7 @@
     align-items: center;
     font-size: 5.8rem;
     white-space: nowrap;
-    padding: 10rem 0 0;
+    // padding: 10rem 0 0;
 
     animation: fadeIn 1.5s;
 
@@ -105,6 +109,7 @@
     }
     @include respond(tab-port) {
       line-height: 6.5rem;
+      font-size: 3.2vw;
     }
 
     @include respond(phone) {
@@ -112,7 +117,7 @@
       align-items: center;
       bottom: 21%;
       line-height: 5rem;
-      font-size: 3rem;
+      font-size: 3.3vw;
       overflow: hidden;
       margin: 1rem 0;
     }
@@ -137,7 +142,7 @@
     font-size: 5.8rem;
     line-height: 8.5rem;
     color: $color-primary-dark;
-    padding: 0rem 0 10rem;
+    // padding: 0rem 0 10rem;
 
     animation: fadeIn 1.5s;
 
@@ -151,13 +156,14 @@
 
     @include respond(tab-port) {
       line-height: 6.5rem;
-      padding: 0rem 0 0rem;
+      // padding: 0rem 0 10rem;
+      font-size: 3.2vw;
     }
 
     @include respond(phone) {
       bottom: 11%;
       line-height: 5rem;
-      font-size: 3rem;
+      font-size: 3.3vw;
     }
 
     @include respond(phone-small) {
@@ -292,11 +298,11 @@
           margin-bottom: -5rem;
         }
         @include respond(tab-port) {
-          font-size: 5.8rem;
+          font-size: 5.6rem;
         }
 
         @include respond(phone) {
-          font-size: 8rem;
+          font-size: 6rem;
           line-height: normal;
         }
         @include respond(phone-small) {
@@ -319,7 +325,7 @@
           font-size: 8rem;
         }
         @include respond(tab-port) {
-          font-size: 5.8rem;
+          font-size: 5.6rem;
         }
 
         @include respond(phone) {
